@@ -45,7 +45,7 @@
 
 文字之中的公式、字母（变量、常量）均使用\LaTeX，如$U=IR$。若公式或需要带入的数据较长，可以使用行间公式，如（公式详尽的注意事项见解答部分）
 \begin{equation}
-    \int \sqrt{\frac{x}{1-x}} \mathrm{d}x = - \sqrt{x(1-x)} - \arccos{\sqrt{x}} + \mathrm{Const}. \eqtag{1}
+    \int \sqrt{\frac{x}{1-x}}\,\mathrm{d}x = - \sqrt{x(1-x)} - \arccos{\sqrt{x}} + \mathrm{Const}. \eqtag{1}
 \end{equation}
 
 \subq{1} 你可以使用\texttt{\textbackslash subq\{编号\}}命令标记一级小问，使用\texttt{\textbackslash subsubq\{编号\}}标记二级小问。所有小问命令均无自动换行，如需换行请在命令前手动空行。
@@ -95,9 +95,9 @@
     a = \max_{0\leq x \leq 1} x \cdot 2^{-x^2} \eqtagscore{4}{3} \label{eq:1.4}
 \end{equation}
 
-接下来\ref{eq:1.5}式是积分式的写法，微分符号$\mathrm{d}$使用正体\texttt{\textbackslash mathrm\{d\}}，$\mathrm{Const}.$使用正体\texttt{\textbackslash mathrm\{Const\}.}，也可以直接写$C$。
+接下来\ref{eq:1.5}式是积分式的写法，微分符号$\mathrm{d}$使用正体\texttt{\textbackslash mathrm\{d\}}，如果出现在积分中或作为乘数后，应使用$\texttt{\textbackslash,\textbackslash mathrm\{d\}}$加大与前方的间距，$\mathrm{Const}.$使用正体\texttt{\textbackslash mathrm\{Const\}.}，也可以直接写$C$。
 \begin{equation}
-    \int \sqrt{\frac{x}{1-x}} \mathrm{d}x = - \sqrt{x(1-x)} - \arccos{\sqrt{x}} + \mathrm{Const}. \eqtagscore{5}{3} \label{eq:1.5}
+    \int \sqrt{\frac{x}{1-x}}\,\mathrm{d}x = - \sqrt{x(1-x)} - \arccos{\sqrt{x}} + \mathrm{Const}. \eqtagscore{5}{3} \label{eq:1.5}
 \end{equation}
 
 对于答案中插入的图片，处理方式与题干中的图片相同。
